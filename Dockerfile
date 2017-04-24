@@ -12,7 +12,7 @@ RUN apk add --no-cache --virtual .runDeps \
 
 ENV RDECK_BASE=/opt/rundeck
 ENV RDECK_JAR=$RDECK_BASE/app.jar
-ENV RUNDECK_VERSION=2.7.3
+ENV RUNDECK_VERSION=2.8.2
 
 RUN mkdir -p $RDECK_BASE \
     && curl -L -o $RDECK_JAR http://dl.bintray.com/rundeck/rundeck-maven/rundeck-launcher-$RUNDECK_VERSION.jar
